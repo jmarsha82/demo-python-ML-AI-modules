@@ -1,4 +1,10 @@
-# Byte-compiled / optimized / DLL files
+
+
+emails/
+ml-100k/
+
+
+ Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
