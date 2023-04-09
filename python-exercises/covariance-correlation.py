@@ -29,7 +29,7 @@ print(np.cov(pageSpeeds, purchaseAmount))
 
 purchaseAmount = 100 - pageSpeeds * 3
 
-# scatter(pageSpeeds, purchaseAmount)
+scatter(pageSpeeds, purchaseAmount)
 
-# correlation (pageSpeeds, purchaseAmount)
+correlation (pageSpeeds, purchaseAmount)
 plt.show()
