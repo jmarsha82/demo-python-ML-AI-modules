@@ -1,13 +1,16 @@
-from neuralNetworkClass import NeuralNetwork as nnV_Beta
+from neuralNetworkClass import NeuralNetwork as nNetwork
+import numpy
 
-inputNodes = 3
-hiddenNodes = 3
-outputNodes = 3
-learningRate = 0.3
+inputNodes = 6
+hiddenNodes = 6
+outputNodes = 6
+learningRate = 0.4
 
-nnV_Beta.__init__(nnV_Beta, inputNodes, hiddenNodes, outputNodes, learningRate)
+n = nNetwork(inputNodes, hiddenNodes, outputNodes, learningRate)
 
-print("nnV_Beta inputNodes : " + nnV_Beta.inputNodes)
-print("nnV_Beta hiddenNodes : " + nnV_Beta.hiddenNodes)
-print("nnV_Beta outputNodes : " + nnV_Beta.outputNodes)
-print("nnV_Beta learningRate : " + nnV_Beta.learningRate)
+print("n interaface-inputNodes : " + str(n.get_inodes()))
+print("n interaface-hiddenNodes : " + str(n.get_hnodes()))
+print("n interaface-outputNodes : " + str(n.get_onodes()))
+print("n interaface-learningRate : " + str(n.get_lr()))
+
+numpy.random.rand(3,3)

@@ -42,7 +42,9 @@ class NeuralNetwork:
     # query the neural network
     def query():
         pass
-    
+
+    pass
+
 inputNodes = 3
 hiddenNodes = 3
 outputNodes = 3
@@ -52,6 +54,7 @@ n = NeuralNetwork(inputNodes, hiddenNodes, outputNodes, learningRate)
 
 n.set_hnodes(hiddenNodes)
 
-print("H Nodes : " + n.get_hnodes())
-
-# print(nnV_Beta)
+print("n inputNodes : " + str(n.get_inodes()))
+print("n hiddenNodes : " + str(n.get_hnodes()))
+print("n outputNodes : " + str(n.get_onodes()))
+print("n learningRate : " + str(n.get_lr()))
