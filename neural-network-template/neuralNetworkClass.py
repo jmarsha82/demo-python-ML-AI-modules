@@ -53,12 +53,20 @@ class NeuralNetwork:
         pass
     
     # query the neural network
-    def query():
+    def query(self, inputs_list):
         # convert inputs list to 2d array
+        inputs = numpy.array(inputs_list, ndmin=2).T
         
-        pass
-
-    pass
+        # calculate signals into hidden layer
+        hidden_outputs = self.activation_function(hidden_inputs)
+        
+        # calculate signals into final output layer
+        final_inputs = numpy.dot(self.who, hidden_outputs)
+        
+        # calculate the signals emerging from final output
+        final_outputs = self.activation_function(final_inputs)
+        
+        return final_outputs
 
 # inputNodes = 3
 # hiddenNodes = 3
