@@ -54,6 +54,8 @@ nosetests.xml
 coverage.xml
 *.cover
 *.py,cover
+*.sarif
+.pip-audit-cache/
 .hypothesis/
 .pytest_cache/
 
