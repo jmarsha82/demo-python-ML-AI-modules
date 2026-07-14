@@ -1,6 +1,6 @@
 -e .
 pytest>=8.0
 pytest-cov>=7.1.0
-ruff>=0.6.0
+ruff>=0.15.21
 bandit[toml,sarif]>=1.7.10
 pip-audit>=2.10.1
